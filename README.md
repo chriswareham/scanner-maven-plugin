@@ -78,3 +78,16 @@ declare the plugin as shown below:
             <failOnMatches>false</failOnMatches>
         </configuration>
     </plugin>
+
+## Properties
+
+| Name                           | Description                                        | Default                   |
+| ------------------------------ | -------------------------------------------------- | ------------------------- |
+| `scanner.patternsLocation`     | scanner patterns file location                     | scanner-patterns.xml      |
+| `scanner.suppressionsLocation` | scanner suppressions file location                 | scanner-suppressions.xml  |
+| `scanner.root`                 | root directory to execute the scanner from         | src                       |
+| `scanner.includes`             | includes for files to scan                         | .java,.properties,.yml    |
+| `scanner.output.file`          | path and filename to save the scanner output to    | target/scanner-result.xml |
+| `scanner.output.format`        | format of the scanner output (xml or plain)        | xml                       |
+| `scanner.failOnMatches`        | whether to fail on matches to the scanner patterns | true                      |
+| `scanner.skip`                 | whether to skip execution                          | false                     |

@@ -79,6 +79,15 @@ declare the plugin as shown below:
         </configuration>
     </plugin>
 
+False positives can be suppressed on a per project basis with a suppressions
+file. A sample suppressions file is shown below:
+
+    <suppressions>
+        <suppression file="src/main/java/net/chriswareham/scanner/Test.java">
+            <pattern name="SSH ED25519 Key"/>
+        </suppression>
+    </suppressions>
+
 ## Properties
 
 | Name                           | Description                                        | Default                   |
